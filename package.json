@@ -1,0 +1,17 @@
+{
+  "name": "grinding-wheel-speed-calc",
+  "version": "1.0.0",
+  "description": "Grinding wheel peripheral speed calculator and rated-speed check",
+  "license": "MIT",
+  "author": "shanguoao2026-web",
+  "type": "module",
+  "bin": { "grinding-wheel-speed-calc": "dist/cli.js" },
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test",
+    "prepack": "npm run build"
+  },
+  "engines": { "node": ">=18" },
+  "files": ["dist", "README.md", "LICENSE"],
+  "devDependencies": { "@types/node": "^18.19.0", "typescript": "^5.7.0" }
+}
